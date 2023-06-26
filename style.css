@@ -89,6 +89,7 @@ footer {
 
 footer.links {
     display: flex;
+    flex-wrap: nowrap;
 }
 
 footer .links a{

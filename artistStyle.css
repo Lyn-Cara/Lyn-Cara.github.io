@@ -16,6 +16,12 @@ header {
     justify-content: space-between;
 }
 
+header .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
 .links a {
     font-size: 2rem;
 }
@@ -159,8 +165,6 @@ header {
 
     header .links {
         width: 100%;
-        display: flex;
-        justify-content: center;
     }
 
     .links a {
