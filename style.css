@@ -90,6 +90,8 @@ footer {
 footer .links {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
 }
 
 footer .links a{
@@ -106,9 +108,6 @@ footer p a {
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        font-size: 10px;
-    }
 
     main h2 {
         font-size: 3rem;
