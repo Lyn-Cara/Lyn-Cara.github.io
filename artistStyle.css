@@ -3,6 +3,7 @@ body{
     color: white;
     background: rgb(32, 9, 75);
     background: linear-gradient(111deg, rgba(32, 9, 75, 1) 14%, rgba(22, 49, 180, 1) 34%, rgba(101, 6, 152, 1) 57%, rgba(47, 6, 113, 1) 70%);
+    overflow-x: hidden;
 }
 
 header {
