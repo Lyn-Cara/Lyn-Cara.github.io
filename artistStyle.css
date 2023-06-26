@@ -1,7 +1,8 @@
 body{
     font-family: 'Aoboshi One', serif;
     color: white;
-    overflow: hidden;
+    background: rgb(32, 9, 75);
+    background: linear-gradient(111deg, rgba(32, 9, 75, 1) 14%, rgba(22, 49, 180, 1) 34%, rgba(101, 6, 152, 1) 57%, rgba(47, 6, 113, 1) 70%);
 }
 
 header {
@@ -30,8 +31,6 @@ header {
     left: 0;
     display: flex;
     align-items: center;
-    background: rgb(32, 9, 75);
-    background: linear-gradient(111deg, rgba(32, 9, 75, 1) 14%, rgba(22, 49, 180, 1) 34%, rgba(101, 6, 152, 1) 57%, rgba(47, 6, 113, 1) 70%);
 }
 
 .hero-text {
@@ -156,6 +155,12 @@ header {
         width: 100vw;
         left: 0px;
         position: static;
+    }
+
+    header .links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .links a {

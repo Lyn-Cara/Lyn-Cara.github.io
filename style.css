@@ -87,6 +87,10 @@ footer {
     justify-content: center;
 }
 
+footer.links {
+    display: flex;
+}
+
 footer .links a{
     font-size: 3em;
     margin: 0px 15px;
