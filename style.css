@@ -114,6 +114,13 @@ footer p a {
         width: 50%;
     }
 
+    footer {
+        position: static;
+        background-color: rgba(0, 0, 0, 0.7);
+        -webkit-backdrop-filter: blur(50px);
+        backdrop-filter: blur(50px);
+    }
+
     footer .links a {
         font-size: 2rem;
     }
