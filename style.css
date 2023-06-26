@@ -8,10 +8,11 @@
 }
 
 /*
-  2. Remove default margin
+  2. Remove default margin & padding
 */
 * {
     margin: 0;
+    padding: 0;
 }
 
 /*
@@ -22,18 +23,6 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-}
-
-/*
-  5. Improve media defaults
-*/
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
 }
 
 /*
@@ -59,73 +48,76 @@ h6 {
     overflow-wrap: break-word;
 }
 
-/*
-  8. Create a root stacking context
-*/
-#root,
-#__next {
-    isolation: isolate;
-}
-
-body,
-html {
-    margin: 0px;
-    padding: 0px;
+body {
     font-family: 'Aoboshi One', serif;
     color: white;
-    overflow: hidden;
+    overflow-x: hidden;
+    background: rgb(32, 9, 75);
+    background: linear-gradient(111deg, rgba(32, 9, 75, 1) 14%, rgba(22, 49, 180, 1) 34%, rgba(101, 6, 152, 1) 57%, rgba(47, 6, 113, 1) 70%);
+    background-position: fixed;
+    scroll-snap-type: y mandatory;
+    position: relative;
 }
 
-header {
+.main-header {
     position: fixed;
     top: 0px;
     z-index: 2;
     padding: 1rem 2rem;
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.links a {
+.main-header .links a {
     font-size: 2rem;
 }
 
 /* The hero image */
-.hero-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+.hero {
     height: 100vh;
-    max-width: 100vw;
-    position: relative;
-    top: 0;
-    left: 0;
+    width: 100vw;
+    padding: 0px 4rem;
     display: flex;
     align-items: center;
-    background: rgb(32, 9, 75);
-        background: linear-gradient(111deg, rgba(32, 9, 75, 1) 14%, rgba(22, 49, 180, 1) 34%, rgba(101, 6, 152, 1) 57%, rgba(47, 6, 113, 1) 70%);
+    scroll-snap-align: start;
+    position: relative;
+    overflow: visible;
 }
 
-.hero-text {
+.hero .hero-text {
     z-index: 2;
-    padding: 5rem;
 }
 
-.hero-text h2{
+.hero .hero-text h2{
     font-size: 5rem;
     text-transform: uppercase;
 }
 
-.hero-text p {
+.hero .hero-text p {
     width: 50%;
     font-size: 0.8rem;
 }
 
-.hero-text button {
+.hero .hero-text button {
     padding: 5px;
     font-size: 1.8rem;
 }
 
-.next {
+.hero .spotlight {
+    max-height: 100vh;
+    max-width: 100vw;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    height: 60vh;
+    z-index: 1;
+    border-radius: 20px;
+    transition: all 3s ease-in-out;
+}
+
+.stats {
     position: fixed;
     height: 20vh;
     width: 70vw;
@@ -141,24 +133,23 @@ header {
     justify-content: space-around;
 }
 
-.next p {
+.stats p {
     font-size: 2rem;
 }
 
-.next .album {
+.stats .album {
     position: relative;
 }
 
-.next .album i {
+.stats .album i {
     position: absolute;
     top: 50%;
     left: 40%;
     font-size: 2rem;
 }
 
-.next .album img{
+.stats .album img{
     height: 20vh;
-
 }
 
 .fa {
@@ -193,7 +184,7 @@ header {
 
 .slide-control button {
     height: 15px;
-    width: 5px;
+    width: 15px;
     border-radius: 50%;
     margin: 10px 3px;
     background-color: transparent;
@@ -210,20 +201,28 @@ header {
         font-size: 10px;
     }
 
-    .hero-text h2 {
+    .hero .hero-text {
+        padding: 0px 2rem;
+    }
+    .hero .hero-text h2 {
         font-size: 3rem;
+        overflow-wrap: break-word;
     }
     
-    .hero-text p {
+        .hero .hero-text p {
         width: 90%;
     }
 
-    .next {
+        .hero .spotlight {
+        right: 0px;
+    }
+
+    .stats {
         width: 100vw;
     }
 
-        .links a {
-            width: 40px;
-            font-size: 2rem;
-        }
+    .links a {
+        width: 40px;
+        font-size: 2rem;
+    }
 }
