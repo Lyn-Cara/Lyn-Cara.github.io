@@ -24,7 +24,7 @@ function showSlide(e, i) {
     slides[slideIndex].style.display = "none";
     slideIndex = n;
     if (n > slides.length) { slideIndex = 0 }
-    if (n < 0) { slideIndex = slides.length -1 };
+    if (n < 0) { slideIndex = slides.length - 1 };
 
     slides[slideIndex].style.display = "block";
 }
