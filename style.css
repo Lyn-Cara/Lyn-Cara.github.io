@@ -87,7 +87,7 @@ footer {
     justify-content: center;
 }
 
-footer.links {
+footer .links {
     display: flex;
     flex-wrap: nowrap;
 }
