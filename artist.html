@@ -6,7 +6,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>#GoAWWF Tobi Sunmola</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='artistStyle.css'>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,112 +16,51 @@
 </head>
 
 <body>
-    <header class="main-header">
-        <h1>#GoAWWF</h1>
-        <nav class="links">
+    <header>
+        <h1><a href="index.html">#GoAWWF</a></h1>
+        <div class="links">
             <a href="https://www.instagram.com/tobisunmola/?igshid=NTc4MTIwNjQ2YQ%3D%3D" class="fa fa-instagram"></a>
-            <a href="https://twitter.com/TobiSunmola_" class="fa fa-twitter fa-lg"></a>
+            <a href="https://twitter.com/TobiSunmola_" class="fa fa-twitter fs-lg"></a>
             <a href="https://www.facebook.com/TobiSunmolaMusic" class="fa fa-facebook"></a>
             <a href="https://open.spotify.com/artist/2a9QzOneTG22ZzrghpC4DK" class="fa fa-spotify"></a>
             <a href="https://www.facebook.com/TobiSunmolaMusic" class="fa fa-apple"></a>
-        </nav>
+        </div>
     </header>
-    <section class="hero landing">
+    <main class="hero-image">
+        <img src="assets/07243644-23A6-4E2B-821B-40365CF4859A.JPG" class="slide">
+        <img src="assets/8F9CA39C-BF90-49AC-8335-74AED1D6C854.jpeg" class="slide">
+        <img src="assets/8FDBD0A1-FB5C-4FAA-862B-B64F5C0BF27D.JPG" class="slide">
+        <div class="slide-control" id="slideControl"></div>
         <div class="hero-text">
             <h2>
                 Tobi Sunmola
             </h2>
             <p>
                 Born in Lagos Nigeria, the young rapper discovered his fascination and inspiration for making music when
-                he
-                was
-                13 years
+                he was 13 years
                 old. Beginning his musical journey in Nigeria, he migrated to the UK at the age of 17 where he found a
-                youth
-                club that
+                youth club that
                 allowed him to create music for free and release music as a solo artiste under the alias ''Stripez''.
-                His
-                music
-                evolved
+                His music evolved
                 into melodies, production and songwriting.
             </p>
         </div>
-        <img src="assets/07243644-23A6-4E2B-821B-40365CF4859A.JPG" class="spotlight">
-        <footer class="stats">
-            <section>
-                <h3>Followers</h3>
-                <p>665</p>
-            </section>
-            <section>
-                <h3>Monthly Listeners</h3>
-                <p>365</p>
-            </section>
-            <a href="https://open.spotify.com/artist/2a9QzOneTG22ZzrghpC4DK" class="album">
-                <img src="assets/album.png">
-                <i class="fa fa-solid fa-play fa-beat fa-10x"></i>
-            </a>
-        </footer>
-    </section>
-    <section class="hero description">
-        <div class="hero-text">
-            <h2>
-                Tobi Sunmola
-            </h2>
-            <p>
-                Born in Lagos Nigeria, the young rapper discovered his fascination and inspiration for making music when
-                he was
-                13 years
-                old. Beginning his musical journey in Nigeria, he migrated to the UK at the age of 17 where he found a
-                youth
-                club that
-                allowed him to create music for free and release music as a solo artiste under the alias ''Stripez''.
-                His music
-                evolved
-                into melodies, production and songwriting.
-            </p>
-        </div>
-        <img src="assets/8F9CA39C-BF90-49AC-8335-74AED1D6C854.jpeg" class="spotlight">
-    </section>
-    <section class="hero music">
-        <section class="hero description">
-            <div class="hero-text">
-                <h2>
-                    Tobi Sunmola
-                </h2>
-                <p>
-                    Born in Lagos Nigeria, the young rapper discovered his fascination and inspiration for making music
-                    when he
-                    was
-                    13 years
-                    old. Beginning his musical journey in Nigeria, he migrated to the UK at the age of 17 where he found
-                    a youth
-                    club that
-                    allowed him to create music for free and release music as a solo artiste under the alias
-                    ''Stripez''. His
-                    music
-                    evolved
-                    into melodies, production and songwriting.
-                </p>
-            </div>
-            <img src="assets/8FDBD0A1-FB5C-4FAA-862B-B64F5C0BF27D.JPG" class="spotlight">
-        </section>
-    </section>
-    <div class="slide-control" id="slideControlWrapper"></div>
-    <footer class="stats">
-        <section>
+    </main>
+    <footer class="next">
+        <div>
             <h3>Followers</h3>
             <p>665</p>
-        </section>
-        <section>
+        </div>
+        <div>
             <h3>Monthly Listeners</h3>
             <p>365</p>
-        </section>
+        </div>
         <a href="https://open.spotify.com/artist/2a9QzOneTG22ZzrghpC4DK" class="album">
             <img src="assets/album.png">
             <i class="fa fa-solid fa-play fa-beat fa-10x"></i>
         </a>
     </footer>
-    <script src='script.js'></script>
+    <script src='carousel.js'></script>
 
 </body>
 
